@@ -7,7 +7,7 @@ import BeforeAfterSection from '@/components/BeforeAfterSection'; // Zaimportowa
 export default function Home() {
   return (
     <main>
-      <HeroSection /> {/* Użyto komponentu HeroSection */}
+      <HeroSection /> {/* Użyto komponentu HeroSection (zawiera teraz również galerię) */}
 
       <AppDescriptionSection /> {/* Użyto komponentu AppDescriptionSection */}
       <BonusSection /> {/* Użyto komponentu BonusSection */}
