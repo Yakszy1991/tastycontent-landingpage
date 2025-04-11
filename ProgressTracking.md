@@ -6,19 +6,25 @@
 -   [x] **Struktura Projektu:** Zweryfikowano/utworzono podstawową strukturę folderów (`src/app`, `src/components`, `src/lib`, `src/utils`).
 -   [x] **Konfiguracja Testów:** Zainstalowano Jest & React Testing Library, skonfigurowano `jest.config.js`, `jest.setup.js`, dodano skrypt `test` do `package.json`.
 -   [x] **Konfiguracja Supabase:** Utworzono projekt, tabelę (`waitlist_signups`), zapisano klucze API w `.env.local`.
--   [ ] **Konfiguracja Vercel:** Utworzono repo Git, projekt Vercel, skonfigurowano zmienne środowiskowe. *(Do zrobienia - kroki dla użytkownika)*
+-   [x] **Konfiguracja Vercel:** Utworzono repo Git, projekt Vercel, skonfigurowano zmienne środowiskowe. *(Do zrobienia - kroki dla użytkownika - WYKONANO)
 
 ---
 
 ## Faza 2: Implementacja Statycznego UI
 
-*(Następna faza po konfiguracji Vercel)*
+-   [x] **Hero Section:** Stworzono komponent `HeroSection.tsx` z nagłówkiem, podtytułem i statycznym formularzem email. Zintegrowano z `page.tsx`.
+-   [x] **Sekcja Opisu Aplikacji:** Stworzono komponent `AppDescriptionSection.tsx` z nagłówkiem i trzema blokami opisującymi cechy. Zintegrowano z `page.tsx`.
+-   [x] **Sekcja Bonusu:** Stworzono komponent `BonusSection.tsx` z opisem bonusu. Zintegrowano z `page.tsx`.
+-   [x] **Sekcja Przed i Po:** Stworzono komponent `BeforeAfterSection.tsx` z placeholderami na zdjęcia. Zintegrowano z `page.tsx`.
+-   [x] **Stopka (Footer):** Stworzono komponent `Footer.tsx` z podstawowymi informacjami i linkami. Zintegrowano z `layout.tsx`.
 
 ---
 
 ## Faza 3: Integracja Formularza i Backend
 
-*(Do zrobienia)*
+-   [ ] **Konfiguracja Supabase Client:** *(Następny krok)*
+-   [ ] **Walidacja Formularza (Frontend):**
+-   [ ] **Obsługa Wysyłki Formularza:**
 
 ---
 

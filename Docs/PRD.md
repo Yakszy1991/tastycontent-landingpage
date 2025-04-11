@@ -22,8 +22,9 @@ Landing page ma komunikować najważniejsze korzyści produktu, oferować bonus 
 - Treść: "Zapisz się już dziś i odbierz 100 zł na start!"
 - Warunki: bonus do wykorzystania przy pierwszym zamówieniu, ograniczony do pierwszych 100 osób
 
-### 3.4 Społeczny dowód
-- 1–2 cytaty klientów lub krótkie opinie (np. "Zamówiłam content w piątek – w sobotę miałam gotowe materiały")
+### 3.4 Przed i Po
+- Wizualne porównanie pokazujące zdjęcie przesłane przez klienta ("Przed") oraz profesjonalny content wygenerowany przez TastyContent ("Po").
+- Krótki opis podkreślający transformację i jakość końcowego produktu.
 
 ### 3.5 Stopka
 - E-mail kontaktowy
@@ -43,7 +44,7 @@ Landing page ma komunikować najważniejsze korzyści produktu, oferować bonus 
 - CMS lub backend do integracji z bazą maili (opcjonalnie na początek: Mailchimp, ConvertKit lub Supabase)
 
 ## 6. Termin i etapy realizacji
-- Etap 1 (Dzień 1): makieta + treść (copywriting) – gotowe ✅
+- Etap 1 (Dzień 1): makieta + treść (copywriting) – gotowe 
 - Etap 2 (Dzień 2–3): projekt UI i wdrożenie statycznej wersji
 - Etap 3 (Dzień 4): integracja formularza i testy
 - Etap 4 (Dzień 5): publikacja i monitoring zapisów
