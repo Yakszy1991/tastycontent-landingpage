@@ -72,12 +72,13 @@ const PortfolioGallery = () => {
             <SwiperSlide key={index}>
               {({ isActive }) => (
                 <div 
-                  className={`aspect-square overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 ${isActive ? 'scale-150 z-10 shadow-xl' : 'scale-100'}`}
+                  className={`overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 ${isActive ? 'scale-125 z-10 shadow-xl' : 'scale-100'}`}
+                  style={{ height: isActive ? 'auto' : '100%', maxHeight: isActive ? '60vh' : '40vh' }}
                 >
                   <img 
                     src={src} 
                     alt={`Portfolio ${index + 1}`} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full max-h-[60vh] object-contain"
                   />
                 </div>
               )}
@@ -90,15 +91,20 @@ const PortfolioGallery = () => {
       <style jsx global>{`
         .portfolio-swiper {
           width: 100%;
-          padding-top: 20px;
-          padding-bottom: 50px;
+          padding-top: 40px;
+          padding-bottom: 60px;
           overflow: visible !important; /* Pozwala na wystawanie powiększonych slajdów */
+          /* Dodajemy minimalną wysokość, aby zapewnić spójny rozmiar */
+          min-height: 400px;
         }
         
         .swiper-slide {
           transition: transform 0.5s ease, opacity 0.5s ease;
           height: auto;
           opacity: 1 !important; /* Wymuszamy pełną widoczność dla wszystkich slajdów domyślnie */
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .swiper-slide-active {
