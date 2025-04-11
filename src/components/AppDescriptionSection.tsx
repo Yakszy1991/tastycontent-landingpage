@@ -3,37 +3,24 @@ import React from 'react';
 
 const AppDescriptionSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50"> {/* Lekkie tło dla odróżnienia */}
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
-          {/* TODO: Dodać nagłówek sekcji */}
-          Poznaj Możliwości TastyContent
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* TODO: Dodać 3 bloki opisujące cechy/korzyści */}
-          {/* Przykład bloku 1 */}
-          <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
-            {/* Można tu dodać ikonę */}
-            <h3 className="text-xl font-semibold mb-2">Łatwe Zarządzanie Menu</h3>
-            <p className="text-gray-600">
-              Intuicyjny interfejs pozwala szybko aktualizować dania, ceny i opisy.
-            </p>
-          </div>
-          {/* Przykład bloku 2 */}
-          <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
-            {/* Można tu dodać ikonę */}
-            <h3 className="text-xl font-semibold mb-2">Automatyczne Tłumaczenia</h3>
-            <p className="text-gray-600">
-              Dotrzyj do szerszego grona klientów dzięki menu w wielu językach.
-            </p>
-          </div>
-          {/* Przykład bloku 3 */}
-          <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
-            {/* Można tu dodać ikonę */}
-            <h3 className="text-xl font-semibold mb-2">Integracja z QR</h3>
-            <p className="text-gray-600">
-              Generuj kody QR, aby klienci mogli łatwo zobaczyć menu na swoich telefonach.
-            </p>
+    <section className="py-12 md:py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-orange-100/20 border-4 border-orange-200">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent text-center">
+              Jak Działa TastyContent?
+            </h2>
+            <div className="space-y-6 text-gray-600 text-lg md:text-xl leading-relaxed">
+              <p>
+                Masz świetne dania, ale brakuje Ci profesjonalnych zdjęć? Z TastyContent to proste!
+              </p>
+              <p>
+                Wyślij nam jedno zdjęcie zrobione telefonem, a my w ciągu 24 godzin przekształcimy je w gotowe materiały marketingowe – zdjęcia, grafiki, a nawet krótkie wideo.
+              </p>
+              <p>
+                Zapomnij o kosztownych sesjach zdjęciowych i długim oczekiwaniu. Oszczędzaj czas i pieniądze, zyskując content, który przyciągnie klientów.
+              </p>
+            </div>
           </div>
         </div>
       </div>

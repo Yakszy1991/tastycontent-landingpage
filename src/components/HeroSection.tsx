@@ -63,32 +63,42 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center text-center py-16 md:py-24 lg:py-32">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-        Główny Chwytliwy Nagłówek Tutaj
-      </h1>
-      <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 max-w-2xl">
-        Krótki opis wyjaśniający korzyść dla użytkownika i zachęcający do działania.
-      </p>
-      <form className="flex flex-col sm:flex-row items-center gap-4" onSubmit={handleSubmit}>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Twój najlepszy adres e-mail"
-          className={`px-4 py-2 border border-gray-300 rounded-md w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-blue-500 ${error ? 'ring-2 ring-red-500' : ''} ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-          disabled={isLoading}
-        />
-        {error && <p className="text-red-300 text-sm mt-2">{error}</p>}
-        <button
-          type="submit"
-          className={`px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-          disabled={isLoading}
-        >
-          {isLoading ? 'Zapisywanie...' : 'Dołącz do listy!'}
-        </button>
-      </form>
-      {successMessage && <p id="success-message" className="text-green-300 text-sm mt-2">{successMessage}</p>} {/* Wyświetlanie sukcesu */}
+    <section className="py-16 md:py-20 flex items-center justify-center bg-gradient-to-b from-orange-50 via-orange-100 to-white px-4">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-400">
+          Zdobądź profesjonalny kontent dla Twojej restauracji w 24h!
+        </h1>
+        <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          Bez sesji, bez stresu, bez wychodzenia z lokalu. Tylko jedno zdjęcie z telefonu – my zajmujemy się resztą.
+        </p>
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto w-full">
+          <div className="flex flex-col gap-4">
+            <div className="relative w-full">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Twój najlepszy adres e-mail"
+                className={`w-full px-6 py-4 text-lg rounded-2xl bg-white border-0 shadow-lg shadow-orange-100/20 focus:outline-none focus:ring-2 focus:ring-orange-200 text-gray-800 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                disabled={isLoading}
+              />
+            </div>
+            <button
+              type="submit"
+              className={`w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-400 text-white text-lg rounded-2xl font-medium hover:from-orange-600 hover:to-orange-500 transition-all duration-200 shadow-lg shadow-orange-400/20 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={isLoading}
+            >
+              {isLoading ? 'Zapisywanie...' : 'Zapisz się i odbierz bonus'}
+            </button>
+          </div>
+          {error && (
+            <p className="text-red-500 text-sm mt-3">{error}</p>
+          )}
+          {successMessage && (
+            <p className="text-green-500 text-sm mt-3">{successMessage}</p>
+          )}
+        </form>
+      </div>
     </section>
   );
 };

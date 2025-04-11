@@ -31,14 +31,12 @@
 
 ## Faza 4: Testowanie i Wdrożenie
 
--   [ ] **Testowanie Lokalnego Działania:** *(Następny krok)*
--   [ ] **Wdrożenie na Vercel:**
--   [ ] **Testowanie na Środowisku Produkcyjnym:**
+-   [x] **Testowanie Lokalnego Działania:** Sprawdzono działanie formularza i zapis do Supabase lokalnie.
+-   [x] **Wdrożenie na Vercel:** Aplikacja wdrożona na środowisko produkcyjne Vercel.
+-   [x] **Testowanie na Środowisku Produkcyjnym:** Potwierdzono poprawne działanie formularza i zapis do Supabase na wdrożonej stronie.
 
 ---
 
-## Faza 5: Publikacja i Monitoring
+## Faza 5: Dalszy Rozwój i Utrzymanie
 
-*(Do zrobienia)*
-
----
+*(Do zdefiniowania)*
