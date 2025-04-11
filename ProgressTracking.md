@@ -22,15 +22,18 @@
 
 ## Faza 3: Integracja Formularza i Backend
 
--   [ ] **Konfiguracja Supabase Client:** *(Następny krok)*
--   [ ] **Walidacja Formularza (Frontend):**
--   [ ] **Obsługa Wysyłki Formularza:**
+-   [x] **Konfiguracja Supabase Client:** Utworzono plik `src/lib/supabaseClient.ts` i zainstalowano `@supabase/supabase-js`.
+-   [x] **Walidacja Formularza (Frontend):** Dodano `useState` i podstawową walidację email w `HeroSection.tsx`.
+-   [x] **Obsługa Wysyłki Formularza:** Zaimplementowano wysyłkę emaila do Supabase w `HeroSection.tsx` z obsługą ładowania i błędów.
+-   [x] **Wyświetlanie Komunikatów (Sukces/Błąd):** Zaimplementowano wyświetlanie komunikatów w `HeroSection.tsx`.
 
 ---
 
-## Faza 4: Testowanie i Poprawki
+## Faza 4: Testowanie i Wdrożenie
 
-*(Do zrobienia)*
+-   [ ] **Testowanie Lokalnego Działania:** *(Następny krok)*
+-   [ ] **Wdrożenie na Vercel:**
+-   [ ] **Testowanie na Środowisku Produkcyjnym:**
 
 ---
 
